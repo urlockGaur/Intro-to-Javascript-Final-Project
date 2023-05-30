@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Framke Mod6 Assignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <header>
+        
+        <h1>FLEX FITNESS</h1>
+        <img class="headerimg" src="content/ffHeaderImg.jpg" alt="strong man squating">
+    </header>
+
+    <nav>
+        <h2>Membership Management Portal</h2>
+        <div id="gymMemberMenu">
+            <input type="button" id="viewForm" value="Add Gym Member">
+            <input type="button" id="viewList" value="View Gym Members">
+        </div>
+    </nav>
+    
+    <main>
+
+        
+
+
+        <div id="gymMemberAdd">
+
+            <form id="gMemberForm">
+
+                <label for="gMemberUsername" id="gMemberUsernameLabel">Member Username:</label>
+                <input type="text" id="gMemberUsername" name="username" required>
+
+                <label for="gMemberFirstName" id="gMemberFirstNameLabel">Member First Name:</label>
+                <input type="text" id="gMemberFirstName" name="firstname" required>
+
+                <label for="gMemberLastName" id="gMemberLastNameLabel">Member Last Name:</label>
+                <input type="text" id="gMemberLastName" name="lastname" required>
+
+                <label for="gMemberBirthday" id="gMemberBirthdayLabel">Member Birthday:</label>
+                <input type="date" id="gMemberBirthday" name="birthday" required>
+
+                <label for="gMemberEnrollDate" id="gMemberEnrollDateLabel">Member Enrollment Date:</label>
+                <input type="date" id="gMemberEnrollDate" name="enrolldate" required>
+
+                <input type="submit" name="add" class="add" value="Add Member">
+            </form>
+        </div>
+
+        <div id="gymMemberList" style="display: none;">
+            <div class="gymMember-list--filters">
+                <label for="filterKeyword">Keyword (first name, last name, username): </label>
+                <input type="text" name="keyword" id="filterKeyword">
+                <label for="filterSort">Sort By:</label>
+                <select name="sort" id="filterSort">
+                    <option value="id">Id</option>
+                    <option value="firstname">First Name</option>
+                    <option value="lastname">Last Name</option>
+                    <option value="username">Username</option>
+                    <option value="age">Age</option>
+                </select>
+            </div>
+            <div class="gymMember-list--gMembers"></div>
+        </div>
+
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>
