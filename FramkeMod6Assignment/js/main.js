@@ -1,12 +1,12 @@
 /*
 Table of contents. Use ctrl+f to find the following:
     Constructor Function-----------------------------SEARCH_CONSTRUCTOR
-    Default Pet Array--------------------------------SEARCH_ARRAY
+    Default Member Array--------------------------------SEARCH_ARRAY
     Submission (jQuery on method)--------------------SEARCH_SUBMIT
     Adding to an Array-------------------------------SEARCH_ADD_TO_ARRAY
     Getting a Date-----------------------------------SEARCH_DATE
     Validation Functions-----------------------------SEARCH_VALIDATION
-    Display Pets-------------------------------------SERACH_DISPLAY
+    Display Members-------------------------------------SERACH_DISPLAY
     Sorting Functions--------------------------------SEARCH_SORTING
     Filtering Functions------------------------------SEARCH_FILTER
     Using Filtering and Sorting----------------------SEARCH_USING_FILTERS_SORTING
